@@ -1,0 +1,664 @@
+
+body{
+  font-family: 'Alegreya', serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+  background-color: white;
+
+}
+/* Navbar */
+.navbar{
+  transition: all .5s ease-in-out;
+}
+.navbar .logo-image{
+width: 40%;
+}
+
+.nav-link,.navbar-nav .nav-link.active
+ {
+  position: relative;
+  color: white;
+  font-size:1.2rem;
+  text-align: center;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(222, 195, 137);
+  transition: all .4s ease-in-out;
+  
+}
+.nav-link:hover{
+  color: #817255;
+}
+.navbar-nav .nav-link.active::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: .2rem;
+  top: -0.5rem;
+  left: 0;
+  background-color: #a18a5a;
+}
+
+/* Home section */
+.main_body{
+    background-image: url("../Bakery_Images/drew-coffman-1872.jpg");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover; 
+    text-align: center;
+    color: white;
+}
+
+.welcom{
+    font-size:22px;
+
+  }
+.fam_back{
+
+   font-size:70px;
+   font-weight: normal;
+   margin:0px 0px 18px;
+} 
+.info{
+    font-size:24px;
+    line-height:44.64px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    margin:10px 0px 20px;
+    padding:0px;
+
+}
+.contUS{
+    display: inline-block;
+}
+.LearMorelink{
+    display: inline-block; 
+}
+
+
+/* Home section ---->> buttons  css first dive welcom div */
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid#fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 15px 28px;
+    margin: 0px 0px 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  .button-28:hover {
+    color: black;
+    background-color: #fff;
+    box-shadow: white;
+  }
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  .LearMore{
+      appearance: none;
+      background-color: transparent;
+      backdrop-filter: blur(150px);
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 15px 28px ;
+      margin: 0px 0px 12px 12px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 100%;
+      will-change: transform;
+
+  }
+  .LearMorelink{
+    padding-right: 1%;
+  }
+  .LearMore:hover {
+      color: black;
+      background-color: #fff;
+      box-shadow: white;
+    }
+  .LearMore:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+/* Home section ---->> scroll button fisrt div <---- */
+#scrolling_div{
+  margin-top: 7rem;
+}
+.home-scroll{
+  width: 30px;
+  height:50px;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.vntd-mouse-dot {
+  height: 8px;
+  width: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  position: absolute;
+  margin-left: -15%;
+    top: 6px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+@keyframes scroll
+{  0%{   opacity: 1  }
+ 100%{transform: translateY(25px);   opacity: 0  }
+}
+
+/* -----------   Scroll up link      ---------- */
+.Scroll_up_link{
+  background-color:#b2b2b2  ;
+  color: #fff ;
+  border: 2px solid rgba(255,255,255,0.8);
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+  line-height: 400px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  opacity: .5;
+  border-radius: 50%;
+  font-weight: 300;
+}
+.padding_scroll_icon{
+  padding: 20%;
+}
+.Scroll_up_link:hover{
+  background-color:  #666666;
+
+}
+
+/* second section Who we are? */
+.icon-list {
+  list-style: none;
+  margin: 4rem;
+  cursor: pointer;
+}
+.icon-list li{
+  margin-bottom: 2rem;
+
+
+}
+#Mainsecond_id i{
+  color: #8E7754;
+width: 30px;
+height: 30px;
+font-size: 1.5rem;
+position: relative;
+margin-right: 1rem;
+
+}
+#Mainsecond_id i::after{
+content: "";
+position: absolute;
+padding: 1.5rem;
+border-radius: 50%;
+transform: translate(-50%,-50%);
+top: .7rem;
+left: .7rem;
+
+border: 1px solid #6d635381;
+}
+  .who-we-are-right h2{
+    margin-bottom: 1rem;
+    font-size:35px;
+    color:#303030  ;
+  }
+  .who-we-are-right .lead{
+
+margin-left: 2rem;
+  }
+
+/* third part  Our Location css  */
+.main_third_div{
+  background-color: #F8F8F8;
+
+}
+.main_third_div_leftdiv{
+
+   margin-top: 10rem;
+   margin-left: 10%;
+}
+
+
+.main_third_leftdiv_h2{
+  font-size: 3rem;
+   color:#303030;
+  font-weight:400;    
+  margin-bottom: 4%;
+}
+.main_third_leftdiv_p1{
+
+  font-size: 17px;
+  color: #686868;
+  word-spacing: 0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(166, 159, 147);
+  text-align:start;
+  margin-bottom: 3%;
+
+}
+
+ .main_third_leftdiv_p2{
+  font-size: 17px;
+  color: #686868;
+  word-spacing: 0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(166, 159, 147);
+  text-align:start;
+  
+ }
+
+
+
+ 
+.main_third_rightDiv_ul{
+list-style: none;
+text-align: justify;
+padding-top: -20px;
+
+} 
+
+
+
+.main_third_leftDiv_img_img{
+  width: 70%;
+}
+
+/* forth part   Our Baking  */
+
+
+.main_forth_div_h3{ 
+  font-size:30px;
+  line-height:41.4px;
+  letter-spacing:normal;
+  word-spacing:0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(202, 197, 190);
+  text-align:center;
+  text-indent:0px;
+}
+
+.main_forth_div_p{
+  text-align: center;
+  font-size:17px;
+  line-height:31.62px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin:17px 245px 50px;
+  padding:0px;
+  font-weight:400;
+  font-style: normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration: none solid rgb(157, 148, 136);
+  text-align:center;
+  text-indent:0px;
+}
+
+
+
+/* forth part   Our Baking  3 images with h4 and p css */
+.main_forth_divImages_inline_h4{
+  font-size:22px;
+  line-height:30.36px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin-top: 6%;
+  padding:0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(202, 197, 190);
+  text-align:center;
+  text-indent:0px;
+
+}
+.main_forth_divImages_inline_p{
+  line-height:31.62px;
+  color: #686868;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin:0px;
+  padding:0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(166, 159, 147);
+  text-align:center;
+  text-indent:0px;
+}
+
+
+
+
+
+/* fifth part Contact Information */
+
+/* contact info  */
+.Contact-info h2{
+  font-size:32px;
+  line-height:44.16px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing: 0px;
+  margin:0px 0px 25px;
+  padding: 0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(48, 48, 48);
+  text-align:start;
+  text-indent:0px;
+}
+
+
+.Contact-info .txt{
+
+  font-size:17px;
+  color: #686868;
+  line-height:31.62px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing: 0px;
+  margin:0px;
+  padding:0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(104, 104, 104);
+  text-align:start;
+  text-indent:0px;
+  text-align: justify;
+  margin-bottom: 2%;
+}
+
+/* ul of icons and contact  */
+
+.contact-list-ul{
+  list-style: none;
+  line-height:31.62px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin:0px;
+  padding:0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(166, 159, 147);
+  text-align:left;
+  text-indent:0px;
+  }
+
+  
+  .contact-list-ul li{
+  
+    margin-left: 2rem;
+    font-weight:400;
+    padding:1rem;
+  }
+
+
+  .contact-list-ul i{
+    background-color: #8E7754;
+    border-radius: 50%;
+    margin-right: .5rem;
+    padding:.7rem;
+    font-size: 1rem;
+    color: white;
+   
+  }
+
+
+  .main_fifth_div_righdiv_map{
+    width: 100%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+  }
+  
+  
+  
+
+
+
+
+
+/* Footer start here */
+  /* footer part css About us */
+.footer_first_div{
+  float: left; 
+  background-color: #403D38;
+  padding-top: 4%;
+  width: 100%;
+}
+
+.footer_first_div1{
+float: left; 
+width: 25%;
+padding-left: 3%;
+padding-right:3%;
+}
+.footer_first_div2_div1_div{
+  float: left; 
+}
+.footer_first_div2_div1_div_p{
+
+  color: rgb(166, 158, 146);
+    font-size:16px;
+  text-align: justify;
+  line-height: 29.76px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin:0px 0px 20px;
+  padding:0px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration: none solid rgb(166, 158, 146);
+  text-align:start;
+  text-indent:0px;
+}
+/* div 2 Why we are special? css */
+.footer_first_div2{
+  float: left; 
+    width: 23%;
+}
+.footer_first_div2_ul{
+  list-style-image: url("../Bakery_Images/Icons/arrow2.png");
+  color: rgb(166, 158, 146);
+  font-size:16px;
+  line-height:31.62px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin:0px 0px 6px;
+  padding:0px 0px 7px;
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-decoration:none solid rgb(150, 150, 150);
+  text-align:left;
+  text-indent:0px;
+}
+.footer_first_div2_ul_Contact{
+  list-style: none;
+  color: rgb(166, 158, 146);
+  width: 105%;
+}
+.footer_first_div2_ul_li{
+  border-bottom: solid #4a4742 1px ;
+  width:80%;
+}
+/* div 3 Opening Hours css */
+.footer_first_div3{
+  float: left; 
+  width: 23%;
+
+}
+
+/* div 4 contact details css */
+.footer_first_div4{
+  float: left; 
+  width: 23%;
+  margin-left: -5%;
+  background-image: url("../Bakery_Images/contact-details-map.png");
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  background-position-y:115%;
+}
+
+  /* footrt part css div 2 */
+  
+  .footer_first_div_h4{
+    color:#E8E6E3;
+    font-size:18px;
+    line-height:24.84px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 25px;
+    padding:0px;
+    font-weight:400;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(232, 230, 227);
+    text-align:start;
+    text-indent:0px;
+  }
+
+  .footer_main_div_copyRight_P{
+    color: #71706b;
+    font-size:15px;
+    line-height:27.9px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:5px 0px 0px;
+    padding:1rem;
+    font-weight:400;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(157, 148, 136);
+    text-align:center;
+    text-indent:0px;
+    padding: 1%;
+  }
+
+  .last-footer{
+    background-color: #353330;
+    text-align: center;
+ 
+  }
+ 
+  .last-footer img{
+    margin-top: 2rem;
+  }
+
+.footerdiv_social i{
+font-size: 1.5rem;
+ padding: .7rem .7rem;
+ transition: all 0.5s ease-in-out;
+ background-color:#44443d ;
+ border-radius: 50%;
+ color: #8c8a86;
+}
+
+ 
+  .footer-Facebook-icon:hover{
+    color: white;
+    background-color:  rgb(27, 27, 94);
+  }
+  .footer-google-icon:hover{
+    color: white;
+    background-color: #a22b1c;
+
+  }
+  .footer-linkedin-icon:hover{
+    color: white;
+    background-color: #006291;
+
+  }
+  .footer-twitter-icon:hover{
+    color: white;
+    background-color: #008abe;
+
+  }
+
+
+.clear{
+  clear: both;
+}
+.Mainsecond_left{
+  margin-bottom: 2rem;
+}
+
